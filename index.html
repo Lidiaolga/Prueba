@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+<title>validación de formulario</title>
+</head>
+<body>
+    
+    <form >
+    <section class="form-register">
+        <h1>CREATE ACCOUNT</h1>
+        <h2>Nombre</h2> 
+        <input class="controls" type="text" name="nombres" id="nombres"placeholder="Ingrese su nombre" onkeyup="validateName">
+        <h2>E-mail</h2>
+        <input class="controls" type="email" name="correo" id="correo"placeholder="@mail.com"pattern="[A-Za-z0-9]+ \@ mail.com" >
+        <h2>Clave</h2>
+        <input class="controls" type="text" name="Clave" id="clave"placeholder="Ingrese su clave">
+        <h2>Confirme su clave</h2>
+        <input class="controls" type="password" name="password" id="password"placeholder="Ingrese su contraseña"pattern="[A-Za-z0-9]{8,16}" /> 
+        <input  class="botons" type="submit" value="Enviar">
+        
+    </section>
+</form>
+</body>
+<script src="index.js" ></script>
+</html>
+
+
+
+
